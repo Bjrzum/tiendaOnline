@@ -1,0 +1,11 @@
+.nav {
+  position: fixed(column, center, center, wrap);
+  top: 0;
+  right: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

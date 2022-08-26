@@ -1,0 +1,11 @@
+@import 'colors';
+@import 'mixins';
+
+.nav {
+    position: fixed(column, center, center, wrap);
+    top: 0;
+    right: 0;
+    width: 150px;
+
+    @include dFlex;
+}
