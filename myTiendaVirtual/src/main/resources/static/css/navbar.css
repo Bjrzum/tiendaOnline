@@ -135,7 +135,7 @@
 }
 .nav-primary .nav-content-links .link-menu .link-menu-icon #count-cart span {
   background-color: #fff;
-  color: #f00;
+  color: #00FF80;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +143,7 @@
   height: 30px;
   border-radius: 50%;
   font-weight: bold;
+  box-shadow: 0 0 10px #00FF80;
 }
 .nav-primary .nav-content-links .link-menu .link-menu-text {
   display: flex;
