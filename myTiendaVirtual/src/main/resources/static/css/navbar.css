@@ -1,74 +1,3 @@
-/*
-width: 100%;
-height: 100%;
-display: inline-block;
-
-
-
-
-position: fixed;
-    top: 0;
-    left: 0;
-
-
-
-
-     position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    height: 100%;
-
-    position: absolute;
-        top: 0;
-        left: 0;
-
-
-
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    min-height: calc(100vh - 120px);
-
-    display: inline-block;
-        width: 100%;
-        max-width: 800px;
-
-
-
-     color: $green;
-        padding: 1em;
-        color: $green;
-        padding: 1em;
-
-         color: $white;
-        padding: 1em;
-
-        background-color: $gray;
-            padding: 1em;
-
-            background-color: $warm-gray;
-            padding: 1em;
-
-             background-color: $white;
-    padding: 1em;
-
-
-
-
-         display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-      display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-             display: flex;
-                align-items: center;
-                margin-top: 1em;
-*/
 .navbar-min {
   display: flex;
   flex-direction: row;
@@ -205,6 +134,49 @@ position: fixed;
   left: -10px;
 }
 .nav-primary .nav-content-links .link-menu .link-menu-icon #count-cart span {
+  background-color: #fff;
+  color: #00FF80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00FF80;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  border: none;
+  height: 50px;
+  color: #fff;
+  background-color: #333;
+  transition: all 0.4s;
+  overflow: hidden;
+  position: absolute;
+  right: 66px;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-text-active {
+  width: 150px;
+  border: 1px solid #fff;
+}
+.nav-primary .nav-content-links .link-menu:hover .link-menu-icon {
+  color: #0080FF;
+}
+.nav-primary .nav-content-links .link-menu:hover .link-menu-text {
+  width: 150px;
+  border: 1px solid #fff;
+  color: #0080FF;
+}
+.nav-primary .nav-content-links .active .link-menu-icon {
+  color: #0080FF !important;
+}
+.nav-primary .nav-content-links .active .link-menu-text {
+  color: #0080FF !important;
+}link-menu .link-menu-icon #count-cart span {
   background-color: #fff;
   color: #00FF80;
   display: flex;
