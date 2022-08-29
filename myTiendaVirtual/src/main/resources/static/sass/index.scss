@@ -2,24 +2,16 @@
 @import 'mixins';
 
 .content-slider {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    left: 0;
+    @include dIB;
+    @include position(fixed, 0, 0);
     z-index: -1;
     filter: brightness(0.4);
     overflow: hidden;
 
     .slider {
         .img-slider {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            @include position(absolute, 0, 0);
+            @include img;
             transition: all 0.5s ease-in-out;
             opacity: 0;
         }
@@ -31,25 +23,21 @@
 }
 
 .main-index {
-    // 
     display: inline-block;
     width: 100%;
     height: auto;
     min-height: calc(100vh - 120px);
 
     .main-index-title {
-        color: $green;
-        padding: 1em;
+        @include colorPad($green, 1em);
     }
 
     .main-index-subtitle {
-        color: $green;
-        padding: 1em;
+        @extend .main-index-title;
     }
 
     .main-index-text {
-        color: $white;
-        padding: 1em;
+        @include colorPad($white, 1em);
         display: inline-block;
         width: 100%;
         max-width: 800px;
@@ -63,8 +51,7 @@
         text-decoration: none;
         background-color: $green;
         margin-left: 1em;
-        padding: 1em;
-        color: $white;
+        @include colorPad($white, 1em);
         font-weight: bold;
 
         &:hover {
@@ -86,18 +73,13 @@
 
 .ind-slider-cont {
     margin-top: 1.5em;
-    //background-color: red;
     position: relative;
 
     .ind-slider-circle {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
+        @include dIB(10px, 10px);
         border-radius: 50%;
         background-color: $blue;
-        position: absolute;
-        top: 0;
-        left: 0;
+        @include position;
         transition: all 0.5s ease-in-out;
 
     }
@@ -111,9 +93,7 @@
         width: 1px;
         height: 100px;
         background-color: $blue;
-        position: absolute;
-        top: 0;
-        left: 5px;
+        @include position(absolute, 0, 5px);
     }
 }
 
@@ -123,35 +103,31 @@
     justify-content: center;
 
     .target-team {
-        display: inline-block;
-        width: 300px;
-        height: 450px;
+        @include dIB(300px, 450px);
         margin: 1em;
 
         .tarjet-head {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: $green-medium;
+            @include dFlex(column, center, center, wrap);
+            @include bgPad($green-medium, 1em);
             color: $white;
 
-            padding: 1em;
-
-
             .img-team {
-                width: 100px;
-                height: 100px;
-                object-fit: cover;
-                display: inline-block;
+                @include dIB(100px, 100px);
                 border-radius: 50%;
                 overflow: hidden;
-                object-position: top center;
+
+                object: {
+                    fit: cover;
+                    position: top center;
+                }
             }
 
             .name {
-                font-size: 1.2em;
-                font-weight: bold;
+                font: {
+                    size: 1.2em;
+                    weight: bold;
+                }
+
                 margin-top: .5em;
             }
 
@@ -164,8 +140,7 @@
         }
 
         .target-body {
-            background-color: $gray;
-            padding: 1em;
+            @include bgPad($gray, 1em);
 
             a {
                 text-decoration: none;
@@ -188,8 +163,7 @@
         }
 
         .target-footer {
-            background-color: $warm-gray;
-            padding: 1em;
+            @include bgPad($warm-gray, 1em);
 
         }
 
@@ -208,9 +182,6 @@
 
 .footer {
     text-align: center;
-    background-color: $white;
-    padding: 1em;
+    @include bgPad($white, 1em);
     padding-top: 3em;
-
-
 }
