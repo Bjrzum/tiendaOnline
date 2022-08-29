@@ -1,11 +1,178 @@
-.nav {
-  position: fixed(column, center, center, wrap);
-  top: 0;
-  right: 0;
-  width: 150px;
+.navbar-min {
   display: flex;
   flex-direction: row;
+  padding: 1em;
+  align-items: center;
+}
+
+.content-logo {
+  width: 150px;
+  height: 80px;
+}
+.content-logo img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.social-navbar-min {
+  display: inline-block;
+  margin-left: 1em;
+}
+.social-navbar-min .social-navbar-min-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #0080FF;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  z-index: 99999;
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0080FF;
+  position: relative;
+  right: 5em;
+}
+
+.nav-icon {
+  position: relative;
+  right: 0.5em;
+}
+.nav-icon .nav-icon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+}
+.nav-icon .nav-icon-content .bi-dash-lg {
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+  color: #fff;
+}
+.nav-icon .nav-icon-content .line-1 {
+  top: 15px;
+}
+.nav-icon .nav-icon-content .line-2 {
+  top: -15px;
+}
+.nav-icon .nav-icon-content .line-1,
+.nav-icon .nav-icon-content .line-2 {
+  transform: rotate3d(0, 0, 1, 0);
+  transition: all 0.5s ease-in-out;
+}
+.nav-icon .nav-icon-content .line-1-active {
+  transform: rotate3d(0, 0, 1, 45deg);
+  top: 15px;
+}
+.nav-icon .nav-icon-content .line-2-active {
+  transform: rotate3d(0, 0, 1, -45deg);
+  top: -21px;
+  left: 2px;
+}
+.nav-icon .nav-icon-content:hover {
+  cursor: pointer;
+}
+.nav-icon .nav-icon-content:hover .bi-dash-lg {
+  color: #0080FF;
+}
+
+.nav-menu-primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-primary {
+  display: flex;
+  flex-direction: column;
+}
+.nav-primary .nav-content-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.nav-primary .nav-content-links .link-menu {
+  text-decoration: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  font-size: 2em;
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-icon #count-cart {
+  display: inline-block;
+  font-size: 0.5em;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-icon #count-cart span {
+  background-color: #fff;
+  color: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  border: none;
+  height: 50px;
+  color: #fff;
+  background-color: #333;
+  transition: all 0.4s;
+  overflow: hidden;
+  position: absolute;
+  right: 66px;
+}
+.nav-primary .nav-content-links .link-menu .link-menu-text-active {
+  width: 150px;
+  border: 1px solid #fff;
+}
+.nav-primary .nav-content-links .link-menu:hover .link-menu-icon {
+  color: #0080FF;
+}
+.nav-primary .nav-content-links .link-menu:hover .link-menu-text {
+  width: 150px;
+  border: 1px solid #fff;
+  color: #0080FF;
+}
+.nav-primary .nav-content-links .active .link-menu-icon {
+  color: #0080FF !important;
+}
+.nav-primary .nav-content-links .active .link-menu-text {
+  color: #0080FF !important;
 }
