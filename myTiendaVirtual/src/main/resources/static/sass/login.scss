@@ -1,0 +1,98 @@
+@import 'colors';
+@import 'mixins';
+
+body {
+    background: {
+        image: linear-gradient(to right bottom, #00305c, #002751, #001f47, #00173c, #000d32);
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+    }
+
+
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    @include bgPad(transparent, 1em);
+    padding-top: 3em;
+    color: $transparent-white;
+}
+
+.content-form-group-title {
+    text-align: center;
+    color: $green;
+}
+
+.content-form-group-subtitle {
+    @extend .content-form-group-title;
+    padding: 1em;
+}
+
+form {
+    input {
+        display: inline-block;
+        width: 100%;
+        padding: .5em;
+        border: 1px solid $green;
+        border-radius: .5em;
+        //margin-bottom: 1em;
+        background-color: $opacity-green;
+        outline: none;
+        color: $white;
+    }
+
+    input::placeholder {
+        color: $transparent-white;
+    }
+
+    input[type="submit"] {
+        background-color: $green-medium;
+        color: $white;
+        border: none;
+        border-radius: .5em;
+        padding: 1em;
+        cursor: pointer;
+        //margin: 1em;
+
+        &:hover {
+            background-color: $green-dark;
+        }
+    }
+}
+
+.content-form-group-form-options {
+
+    a {
+        text-decoration: none;
+        color: $green;
+        margin: 1em;
+
+        i {
+            font-size: 1.5em;
+        }
+
+        &:hover {
+            color: $green-dark;
+            text-decoration: underline;
+        }
+
+    }
+}
+
+.group-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.content-form-group-form-input {
+    margin: .3em;
+}

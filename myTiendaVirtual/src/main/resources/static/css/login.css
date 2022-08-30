@@ -1,0 +1,78 @@
+body {
+  background-image: linear-gradient(to right bottom, #00305c, #002751, #001f47, #00173c, #000d32);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  background-color: transparent;
+  padding: 1em;
+  padding-top: 3em;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.content-form-group-title, .content-form-group-subtitle {
+  text-align: center;
+  color: #00FF80;
+}
+
+.content-form-group-subtitle {
+  padding: 1em;
+}
+
+form input {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #00FF80;
+  border-radius: 0.5em;
+  background-color: rgba(0, 255, 128, 0.2392156863);
+  outline: none;
+  color: #fff;
+}
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+form input[type=submit] {
+  background-color: #00c261;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: #00af58;
+}
+
+.content-form-group-form-options a {
+  text-decoration: none;
+  color: #00FF80;
+  margin: 1em;
+}
+.content-form-group-form-options a i {
+  font-size: 1.5em;
+}
+.content-form-group-form-options a:hover {
+  color: #00af58;
+  text-decoration: underline;
+}
+
+.group-form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.content-form-group-form-input {
+  margin: 0.3em;
+}

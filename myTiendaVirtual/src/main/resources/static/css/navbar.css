@@ -176,47 +176,4 @@
 }
 .nav-primary .nav-content-links .active .link-menu-text {
   color: #0080FF !important;
-}link-menu .link-menu-icon #count-cart span {
-  background-color: #fff;
-  color: #00FF80;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  font-weight: bold;
-  box-shadow: 0 0 10px #00FF80;
-}
-.nav-primary .nav-content-links .link-menu .link-menu-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0px;
-  border: none;
-  height: 50px;
-  color: #fff;
-  background-color: #333;
-  transition: all 0.4s;
-  overflow: hidden;
-  position: absolute;
-  right: 66px;
-}
-.nav-primary .nav-content-links .link-menu .link-menu-text-active {
-  width: 150px;
-  border: 1px solid #fff;
-}
-.nav-primary .nav-content-links .link-menu:hover .link-menu-icon {
-  color: #0080FF;
-}
-.nav-primary .nav-content-links .link-menu:hover .link-menu-text {
-  width: 150px;
-  border: 1px solid #fff;
-  color: #0080FF;
-}
-.nav-primary .nav-content-links .active .link-menu-icon {
-  color: #0080FF !important;
-}
-.nav-primary .nav-content-links .active .link-menu-text {
-  color: #0080FF !important;
 }
