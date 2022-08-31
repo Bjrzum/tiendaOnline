@@ -1,0 +1,25 @@
+body {
+    background: {
+        image: linear-gradient(to right bottom, #00305c, #002751, #001f47, #00173c, #000d32);
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+    }
+
+
+}
+
+.footer {
+    text-align: center;
+    @include bgPad(transparent, 1em);
+    padding-top: 3em;
+    color: $transparent-white;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $green;
+    margin-left: 1em;
+}

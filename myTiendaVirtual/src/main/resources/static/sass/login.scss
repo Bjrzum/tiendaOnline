@@ -1,29 +1,13 @@
 @import 'colors';
 @import 'mixins';
+@import 'costants';
 
-body {
-    background: {
-        image: linear-gradient(to right bottom, #00305c, #002751, #001f47, #00173c, #000d32);
-        size: cover;
-        repeat: no-repeat;
-        attachment: fixed;
-    }
-
-
-}
 
 .content-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.footer {
-    text-align: center;
-    @include bgPad(transparent, 1em);
-    padding-top: 3em;
-    color: $transparent-white;
 }
 
 .content-form-group-title {

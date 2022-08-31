@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <!-- JQuery CDN Google-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
     <header class="header">
 
@@ -39,7 +41,7 @@
                 </div>
             </div>
             <nav class="nav">
-                
+
                 <div class="nav-menu-primary">
                     <div class="pointer-log">
                         <div class="point"></div>
@@ -51,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav-primary">               
+                <div class="nav-primary">
                     <div class="nav-content-links">
                         <a href="index.html" class="link-menu">
                             <span class="link-menu-text">Inicio</span>
@@ -82,83 +84,91 @@
                             <span class="link-menu-icon">
                                 <i class="bi bi-cart-fill"></i>
                                 <div id="count-cart">
-<!-----------------------------------------Numero de artículos que ha agregado el usuario al carrito--------------------------------------------------->
+                                    <!-----------------------------------------Numero de artículos que ha agregado el usuario al carrito--------------------------------------------------->
                                     <span id="number">
                                         1
                                     </span>
                                 </div>
                             </span>
-                           
+
                         </a>
-                    </div>             
-                </div>        
+                    </div>
+                </div>
             </nav>
         </div>
 
     </header>
     <main class="main">
-       <div class="content-form">
-        <div class="content-form-group">
-            <div class="content-form-group-title">
-                <h1>TITULO DE LA PAGINA</h1>
-            </div>
-            <div class="content-form-group-subtitle">
-                <h3>Registrarse</h3>
-            </div>
+        <div class="to-back">
+            <a href="usuarios.html" class="back">
+                <i class="bi bi-chevron-left"></i>
+                <span>
+                    Volver
+                </span>
+            </a>
+        </div>
+        <div class="content-form">
+            <div class="content-form-group">
+                <div class="content-form-group-title">
+                    <h1>TITULO DE LA PAGINA</h1>
+                </div>
+                <div class="content-form-group-subtitle">
+                    <h3>Registrarse</h3>
+                </div>
 
-            
-        </div>
-        <div class="content-form-group">
-            <div class="content-form-group-form">
-                <form action="../controller/login.php" method="post">
-                    <div class="group-form">
-                        <div class="content-form-group-form-input">
-                            <input type="text" name="nombre" placeholder="Nombre" autofocus required>
-                        </div>
-                        <div class="content-form-group-form-input">
-                            <input type="text" name="apellido" placeholder="Apellido" required>
-                        </div>
-                    </div>
-                    <div class="group-form">
-                        <div class="content-form-group-form-input">
-                            <input type="text" name="correo" placeholder="Correo" required>
-                        </div>
-                        <div class="content-form-group-form-input">
-                            <input type="text" name="cedula" placeholder="Numero de documento" required>
-                        </div>
-                    </div>
-                    <div class="group-form">
-                        <div class="content-form-group-form-input">
-                            <input type="text" name="direccion" placeholder="Dirección de domicilio">
-                        </div>
-                        <div class="content-form-group-form-input">
-                            <input type="text" name="celular" placeholder="Numero de teléfono">
-                        </div>
-                    </div>
-                    <div class="group-form">
-                        <div class="content-form-group-form-input">
-                            <input type="password" name="contrasena" placeholder="Contraseña" required>
-                        </div>
-                        <div class="content-form-group-form-input">
-                            <input type="password" name="contrasena2" placeholder="Repetir contraseña" required>
-                        </div>
-                    </div>
-                                  
-                    <div class="content-form-group-form-input">
-                        <input type="submit" value="Crear cuenta">
-                    </div>
-                </form>
+
             </div>
-            <div class="content-form-group-form-options">
-                <a href="login.html" class="link-form-options">
-                    <span class="link-form-options-text">Inisiar sesión</span>
-                    <span class="link-form-options-icon">
-                        <i class="bi bi-person"></i>
-                    </span>
-                </a>
+            <div class="content-form-group">
+                <div class="content-form-group-form">
+                    <form action="../controller/login.php" method="post">
+                        <div class="group-form">
+                            <div class="content-form-group-form-input">
+                                <input type="text" name="nombre" placeholder="Nombre" autofocus required>
+                            </div>
+                            <div class="content-form-group-form-input">
+                                <input type="text" name="apellido" placeholder="Apellido" required>
+                            </div>
+                        </div>
+                        <div class="group-form">
+                            <div class="content-form-group-form-input">
+                                <input type="text" name="correo" placeholder="Correo" required>
+                            </div>
+                            <div class="content-form-group-form-input">
+                                <input type="text" name="cedula" placeholder="Numero de documento" required>
+                            </div>
+                        </div>
+                        <div class="group-form">
+                            <div class="content-form-group-form-input">
+                                <input type="text" name="direccion" placeholder="Dirección de domicilio">
+                            </div>
+                            <div class="content-form-group-form-input">
+                                <input type="text" name="celular" placeholder="Numero de teléfono">
+                            </div>
+                        </div>
+                        <div class="group-form">
+                            <div class="content-form-group-form-input">
+                                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                            </div>
+                            <div class="content-form-group-form-input">
+                                <input type="password" name="contrasena2" placeholder="Repetir contraseña" required>
+                            </div>
+                        </div>
+
+                        <div class="content-form-group-form-input">
+                            <input type="submit" value="Crear cuenta">
+                        </div>
+                    </form>
+                </div>
+                <div class="content-form-group-form-options">
+                    <a href="login.html" class="link-form-options">
+                        <span class="link-form-options-text">Iniciar sesión</span>
+                        <span class="link-form-options-icon">
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
-       </div>
     </main>
     <footer class="footer">
         <p class="copyright">
@@ -168,4 +178,5 @@
     <script src="../static/js/index.js"></script>
     <script src="../static/js/card.js"></script>
 </body>
+
 </html>

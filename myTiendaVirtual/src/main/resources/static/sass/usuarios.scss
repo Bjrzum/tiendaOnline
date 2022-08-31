@@ -1,0 +1,76 @@
+@import 'colors';
+@import 'mixins';
+@import 'costants';
+
+
+h1 {
+    @include colorPad($green, 1em);
+}
+
+h2 {
+    @include colorPad($green, 1em);
+    text-align: center;
+}
+
+.main {
+    padding: 1em;
+}
+
+.btn-new {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $green-medium;
+    //margin-left: 1em;
+    @include colorPad($white, .5em);
+    font-weight: bold;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $green-dark;
+    }
+}
+
+.table-main {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 1em;
+
+    thead {
+        background-color: $green-dark;
+        color: $white;
+
+        tr {
+            th {
+                padding: 1em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            color: $black;
+            text-align: center;
+
+            td {
+                padding: .5em;
+            }
+        }
+
+        //interlineado verde y blanco
+        tr:nth-child(even) {
+            background-color: $white;
+        }
+
+        //interlineado blanco y verde
+        tr:nth-child(odd) {
+            background-color: $white;
+        }
+    }
+
+    td,
+    th {
+        border: 1px solid $green;
+    }
+}

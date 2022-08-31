@@ -1,0 +1,82 @@
+body {
+  background-image: linear-gradient(to right bottom, #00305c, #002751, #001f47, #00173c, #000d32);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer {
+  text-align: center;
+  background-color: transparent;
+  padding: 1em;
+  padding-top: 3em;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #00FF80;
+  margin-left: 1em;
+}
+
+h1 {
+  color: #00FF80;
+  padding: 1em;
+}
+
+h2 {
+  color: #00FF80;
+  padding: 1em;
+  text-align: center;
+}
+
+.main {
+  padding: 1em;
+}
+
+.btn-new {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #00c261;
+  color: #fff;
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-new:hover {
+  background-color: #00af58;
+}
+
+.table-main {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1em;
+}
+.table-main thead {
+  background-color: #00af58;
+  color: #fff;
+}
+.table-main thead tr th {
+  padding: 1em;
+  text-transform: uppercase;
+}
+.table-main tbody tr {
+  color: #000;
+  text-align: center;
+}
+.table-main tbody tr td {
+  padding: 0.5em;
+}
+.table-main tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+.table-main tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.table-main td,
+.table-main th {
+  border: 1px solid #00FF80;
+}
