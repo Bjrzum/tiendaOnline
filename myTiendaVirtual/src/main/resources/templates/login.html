@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <!-- JQuery CDN Google-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
     <header class="header">
 
@@ -39,7 +41,7 @@
                 </div>
             </div>
             <nav class="nav">
-                
+
                 <div class="nav-menu-primary">
                     <div class="pointer-log">
                         <div class="point"></div>
@@ -51,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav-primary">               
+                <div class="nav-primary">
                     <div class="nav-content-links">
                         <a href="index.html" class="link-menu">
                             <span class="link-menu-text">Inicio</span>
@@ -71,73 +73,67 @@
                                 <i class="bi bi-bag-plus-fill"></i>
                             </span>
                         </a>
-                        <a href="contacto.html" class="link-menu">
-                            <span class="link-menu-text">Contacto</span>
-                            <span class="link-menu-icon">
-                                <i class="bi bi-telephone-fill"></i>
-                            </span>
-                        </a>
                         <a href="carrito.html" class="link-menu">
                             <span class="link-menu-text">Carrito</span>
                             <span class="link-menu-icon">
                                 <i class="bi bi-cart-fill"></i>
                                 <div id="count-cart">
-<!-----------------------------------------Numero de artículos que ha agregado el usuario al carrito--------------------------------------------------->
+                                    <!-----------------------------------------Numero de artículos que ha agregado el usuario al carrito--------------------------------------------------->
                                     <span id="number">
                                         1
                                     </span>
                                 </div>
                             </span>
-                           
+
                         </a>
-                    </div>             
-                </div>        
+                    </div>
+                </div>
             </nav>
         </div>
 
     </header>
     <main class="main">
-       <div class="content-form">
-        <div class="content-form-group">
-            <div class="content-form-group-title">
-                <h1>TITULO DE LA PAGINA</h1>
-            </div>
-            <div class="content-form-group-subtitle">
-                <h3>Iniciar Sesión</h3>
-            </div>
+        <div class="content-form">
+            <div class="content-form-group">
+                <div class="content-form-group-title">
+                    <h1>TITULO DE LA PAGINA</h1>
+                </div>
+                <div class="content-form-group-subtitle">
+                    <h3>Iniciar Sesión</h3>
+                </div>
 
-            
-        </div>
-        <div class="content-form-group">
-            <div class="content-form-group-form">
-                <form action="../controller/login.php" method="post">
-                    <div class="content-form-group-form-input">
-                        <input type="text" name="usuario" placeholder="Email" autofocus>
-                    </div>
-                    <div class="content-form-group-form-input">
-                        <input type="password" name="password" placeholder="Contraseña">
-                    </div>
-                    <div class="content-form-group-form-input">
-                        <input type="submit" value="Iniciar Sesión">
-                    </div>
-                </form>
+
             </div>
-            <div class="content-form-group-form-options">
-                <a href="registro.html" class="link-form-options">
-                    <span class="link-form-options-text">Registrarse</span>
-                    <span class="link-form-options-icon">
-                        <i class="bi bi-person-plus"></i>
-                    </span>
-                </a>
-                <a href="recuperar.html" class="link-form-options">
-                    <span class="link-form-options-text">Recuperar Contraseña</span>
-                    <span class="link-form-options-icon">
-                        <i class="bi bi-question-circle"></i>
-                    </span>
-                </a>
+            <div class="content-form-group">
+                <div class="content-form-group-form">
+                    <form action="../controller/login.php" method="post">
+                        <div class="content-form-group-form-input">
+                            <input type="text" name="usuario" placeholder="Email" autofocus>
+                        </div>
+                        <div class="content-form-group-form-input">
+                            <input type="password" name="password" placeholder="Contraseña">
+                        </div>
+                        <div class="content-form-group-form-input">
+                            <input type="submit" value="Iniciar Sesión">
+                        </div>
+                    </form>
+                </div>
+                <div class="content-form-group-form-options">
+                    <a href="registro.html" class="link-form-options">
+                        <span class="link-form-options-text">Registrarse</span>
+                        <span class="link-form-options-icon">
+                            <i class="bi bi-person-plus"></i>
+                        </span>
+                    </a>
+                    <a href="recuperar.html" class="link-form-options">
+                        <span class="link-form-options-text">Recuperar Contraseña</span>
+                        <span class="link-form-options-icon">
+                            <i class="bi bi-question-circle"></i>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
-       </div>
     </main>
     <footer class="footer">
         <p class="copyright">
@@ -147,4 +143,5 @@
     <script src="../static/js/index.js"></script>
     <script src="../static/js/card.js"></script>
 </body>
+
 </html>

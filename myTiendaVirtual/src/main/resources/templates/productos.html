@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/usuarios.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+
+    <!-- Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Tienda Virtual</title>
+
+    <!-- JQuery CDN Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="navbar">
+            <div class="navbar-min">
+                <div class="content-logo">
+                    <img src="../static/img/logo.svg" alt="logo" class="logo">
+                </div>
+                <div class="social-navbar-min">
+                    <a href="#" class="social-navbar-min-link">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="social-navbar-min-link">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="social-navbar-min-link">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-navbar-min-link">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+
+                <div class="nav-menu-primary">
+                    <div class="pointer-log">
+                        <div class="point"></div>
+                    </div>
+                    <div class="nav-icon">
+                        <div class="nav-icon-content">
+                            <i class="bi bi-dash-lg line-1"></i>
+                            <i class="bi bi-dash-lg line-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-primary">
+                    <div class="nav-content-links">
+                        <a href="index.html" class="link-menu">
+                            <span class="link-menu-text">Inicio</span>
+                            <span class="link-menu-icon">
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                        </a>
+                        <a href="usuarios.html" class="link-menu">
+                            <span class="link-menu-text">Usuarios</span>
+                            <span class="link-menu-icon">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                        </a>
+                        <a href="productos.html" class="link-menu active">
+                            <span class="link-menu-text">Productos</span>
+                            <span class="link-menu-icon">
+                                <i class="bi bi-bag-plus-fill"></i>
+                            </span>
+                        </a>
+                        <a href="carrito.html" class="link-menu">
+                            <span class="link-menu-text">Carrito</span>
+                            <span class="link-menu-icon">
+                                <i class="bi bi-cart-fill"></i>
+                                <div id="count-cart">
+                                    <!-----------------------------------------Numero de artículos que ha agregado el usuario al carrito--------------------------------------------------->
+                                    <span id="number">
+                                        1
+                                    </span>
+                                </div>
+                            </span>
+
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="content-main-header">
+            <h1>
+                TITULO DE LA PAGINA
+            </h1>
+            <h2 class="title-main-header">
+                Administración de Productos
+            </h2>
+            <div class="content-new">
+                <a href="nuevo-producto.html" class="btn-new">
+                    <i class="bi bi-plus-circle"></i>
+                    <span>Nuevo Producto</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="content-main-table">
+            <table class="table-main">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Valor de compra</th>
+                        <th>Valor de venta</th>
+                        <th>Cantidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Koka Kola</td>
+                        <td>1.200</td>
+                        <td>
+                            1.700
+                        </td>
+                        <td>
+                            45
+                        </td>
+                        <td>
+                            <!-- usamos data id para capturar el id del usuario en el boton -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary btn-edit" data-id="1">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-delete" data-id="1">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Producto nuevo</td>
+                        <td>3.450</td>
+                        <td>
+                            4.000
+                        </td>
+                        <td>
+                            90
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary btn-edit" data-id="2">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-delete" data-id="2">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <section class="section">
+        <div class="emergent-edit">
+            <div class="container-edit">
+                <form action="../controller/login.php" method="post">
+                    <div class="group-form">
+                        <div class="content-form-group-form-input">
+                            <input type="text" name="nombre" placeholder="Nombre" autofocus required>
+                        </div>
+                        <div class="content-form-group-form-input">
+                            <input type="text" name="costo" placeholder="Valor de compra" required>
+                        </div>
+                    </div>
+                    <div class="group-form">
+                        <div class="content-form-group-form-input">
+                            <input type="text" name="precio" placeholder="Valor de venta" required>
+                        </div>
+                        <div class="content-form-group-form-input">
+                            <input type="text" name="cantidad" placeholder="Cantidad" required>
+                        </div>
+                    </div>
+
+
+                    <div class="content-form-group-form-input">
+                        <input type="submit" value="Guardar cambios">
+                        <button class="cancel">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="emergent-delete">
+            <div class="container-delete">
+                <div class="content-delete">
+                    <h2>¿Estás seguro de eliminar este producto?</h2>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-delete-yes">
+                            <i class="bi bi-check"></i>
+                            <span>Sí</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-delete-no">
+                            <i class="bi bi-x"></i>
+                            <span>No</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <p class="copyright">
+            Todos los derechos reservados &copy; <span class="year-copyright"></span> | Tienda Virtual Grupo 07
+        </p>
+    </footer>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/user.js"></script>
+</body>
+
+</html>
